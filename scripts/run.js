@@ -14,21 +14,12 @@ const main = async() => {
     // waveCount = await waveContract.getTotalWaves();
 
     // let waveTxn = await waveContract.wave("Hi! How are you?");
+    let txn = await myEpicNFTContract.makeAnEpicNFT();
+    await txn.wait();
     // await waveTxn.wait();
 
-    // waveCount = await waveContract.getTotalWaves();
-
-    // //Calling wave function twice from same account to see the error
-
-    // waveTxn = await waveContract.wave("Hi!");
-    // await waveTxn.wait();
-
-    // waveCount = await waveContract.getTotalWaves();
-
-    // //Random person calling the wave function
-
-    // waveTxn = await waveContract.connect(randomPerson).wave("Another message!");
-    // await waveTxn.wait();
+    txn = await myEpicNFTContract.makeAnEpicNFT();
+    await txn.wait();
 
     // waveCount = await waveContract.getTotalWaves();
 
