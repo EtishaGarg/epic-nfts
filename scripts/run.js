@@ -6,29 +6,12 @@ const main = async() => {
 
     console.log("Contract deployed to: ", myEpicNFTContract.address);
 
-    // // Get contract balance
-    // let contractBalance = await hre.ethers.provider.getBalance(waveContract.address);
-    // console.log("Contract balance: ",hre.ethers.utils.formatEther(contractBalance));
-
-    // let waveCount;
-    // waveCount = await waveContract.getTotalWaves();
-
-    // let waveTxn = await waveContract.wave("Hi! How are you?");
     let txn = await myEpicNFTContract.makeAnEpicNFT();
     await txn.wait();
-    // await waveTxn.wait();
 
     txn = await myEpicNFTContract.makeAnEpicNFT();
     await txn.wait();
 
-    // waveCount = await waveContract.getTotalWaves();
-
-    // // Get contract balance to see what happens
-    // contractBalance = await hre.ethers.provider.getBalance(waveContract.address);
-    // console.log("Contract balance: ",hre.ethers.utils.formatEther(contractBalance));
-
-    // waveArray = await waveContract.getAllWaves();
-    // console.log(waveArray);
 };
 
 const runMain = async() => {
