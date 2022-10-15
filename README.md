@@ -1,13 +1,3 @@
-# Sample Hardhat Project
+# NFT Minter website using Solidity, etherjs and Reactjs
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+A website which enables user to mint their ERC-721 NFT on Goerli test network wherein the smart contract creates dynamic NFTs every time.
